@@ -1,3 +1,6 @@
+/* zadanie pierwsze */
+
+
 .outer {
     height: 200px;
     width: 200px;
@@ -14,6 +17,9 @@
     margin: 50px;
 }
 
+/* zadanie drugie */
+
+
 .coś {
     display: block;
     height: 50px;
@@ -25,7 +31,7 @@
     line-height: 50px;
 }
 
-i {
+label.coś i {
     transform: scale(2)
 }
 
@@ -39,9 +45,33 @@ input {
     border-color: firebrick;
 }
 
+/* zadanie trzecie*/
+
+
 #gradient {
     display: block;
     height: 210px;
     width: 210px;
     background: linear-gradient(to bottom, purple, blue, lightblue, green, yellow, orange, red);
+}
+
+/* zadanie czwarte */
+
+
+@media all and (max-width: 1600px) {
+    .video {
+        height: 100%;
+        width: 100%;
+    }
+}
+
+/* zadanie piąte */
+
+
+ul.lista {
+    list-style-type: none;
+}
+
+ul.lista li i {
+    padding-right: 5px;
 }
