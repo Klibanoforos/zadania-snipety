@@ -1,0 +1,21 @@
+div.gora {
+    background-color: aqua;
+    height: 50vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    animation: curtain 5s linear 1;
+}
+
+div.dol {
+    background-color: goldenrod;
+    height: 50vh;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    animation: curtain 5s linear 1;
+}
+
+@keyframes curtain {
+    0% {height: 0;}
+}
