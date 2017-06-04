@@ -1,0 +1,47 @@
+.outer {
+    height: 200px;
+    width: 200px;
+    background-color: orange;
+    position: static;
+}
+
+.inner {
+    height: 100px;
+    width: 100px;
+    background-color: pink;
+    position: relative;
+    display: inline-block;
+    margin: 50px;
+}
+
+.coś {
+    display: block;
+    height: 50px;
+    width: 50px;
+    background-color: greenyellow;
+    border: solid 5px red;
+    border-radius: 50px;
+    text-align: center;
+    line-height: 50px;
+}
+
+i {
+    transform: scale(2)
+}
+
+input {
+    display: none;
+}
+
+.coś:hover {
+    background-color: green;
+    cursor: pointer;
+    border-color: firebrick;
+}
+
+#gradient {
+    display: block;
+    height: 210px;
+    width: 210px;
+    background: linear-gradient(to bottom, purple, blue, lightblue, green, yellow, orange, red);
+}
