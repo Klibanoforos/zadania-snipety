@@ -169,31 +169,37 @@ div#parala {
 /* zadanie czternaste */
 
 
-div.squares {
-    height: 500px;
-    width: 500px;
-    position: static;
+div.box {
+    height: 300px;
+    width: 300px;
+    position: relative;
     display: inline-block;
+    margin: 20px;
+    background: pink;
 }
 
-div.squares div.front {
-    height: 200px;
-    width: 200px;
+div.box div.box-in {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+   transition: all 0.5s;
+}
+
+div.box div.box-in box-front {
     background-color: darkcyan;
-    position: relative;
-    float: left;
-    display: inline-block;
-    margin: 5px;
-    transform: translateY(50%);
+    z-index: 1;
+    backface-visibility: hidden;
 }
 
-div.squares div.back {
-    height: 200px;
-    width: 200px;
-    background-color: greenyellow;
-    position: relative;
-    float: left;
-    display: inline-block;
-    margin: 5px;
-    transform: translateY(50%);
+div.box div.box-in box-back {
+    background: blue;
+    transform:rotateY(180deg);
+} 
+
+div.box:hover .box-front {
+    transform: rotateY(180deg);
+}
+
+div.box:hover .box-back {
+    transform: rotateY(0deg);
 }
