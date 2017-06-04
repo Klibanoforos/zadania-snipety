@@ -35,7 +35,7 @@ label.coś i {
     transform: scale(2)
 }
 
-input {
+input#font {
     display: none;
 }
 
@@ -75,3 +75,35 @@ ul.lista {
 ul.lista li i {
     padding-right: 5px;
 }
+
+/* zadanie szóste */
+
+
+form.form input::placeholder {
+    color: crimson;
+}
+
+/* zadanie siódme */
+
+
+ul.linki li a[href$=".doc"] {
+    color: bisque;
+}
+
+
+/* zadanie ósme */
+
+
+div.quote q:lang(en)::before, 
+div.quote q:lang(en)::after {
+   content: "*";
+}
+
+div.quote blockquote:lang(en)::before, 
+div.quote blockquote:lang(en)::after {
+   content: "*";
+}
+
+/* zadanie dziewiąte */
+
+
