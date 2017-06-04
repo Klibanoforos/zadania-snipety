@@ -94,6 +94,11 @@ ul.linki li a[href$=".doc"] {
 /* zadanie ósme */
 
 
+div.quote blockquote:lang(all)::before, 
+div.quote blockquote:lang(all)::after {
+   content: """;
+}
+
 div.quote q:lang(en)::before, 
 div.quote q:lang(en)::after {
    content: "*";
@@ -104,6 +109,47 @@ div.quote blockquote:lang(en)::after {
    content: "*";
 }
 
+
 /* zadanie dziewiąte */
 
 
+footer {
+    background-color: aqua;
+    position: fixed;
+    bottom: 0;
+}
+
+/* zadanie dziesiąte */
+
+
+div.obraz {
+    height: 300px;
+    width: 300px;
+    overflow: hidden;
+}
+
+div.obraz img {
+    transition-duration: 2s;
+}
+
+div.obraz img:hover {
+    transform: scale(2);
+}
+
+/* zadanie jedenaste */
+
+
+div.heart p {
+    font-size: 30px;
+}
+
+div.heart p i {
+    color: red;
+    animation: heart 1s linear infinite;
+}
+
+@keyframes heart {
+    0% {transform: scale(1.5);}
+    50% {transform: scale(1;}
+    100% transform: scale(1.5);}
+}
